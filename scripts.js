@@ -21,40 +21,51 @@ function a() {
 
     }
 
-    function game() {
-        if (u == c) {
-            alert("draw" + ' ' + 'computer input' + '  ' + c + 'user input' + ' ' + u);
+    function game()
 
-        } else if (u == 'rock' && c == "scissor") {
-            alert('computer wins' + ' ' + 'computer input' + '  ' + c + 'user input' + ' ' + u);
-            if (u == 'scissor' && c == "rock") {
+    {
+        if (u === c) {
+            alert("draw" + ' ' + 'computer input' + '  ' + c + ' ' + 'user input' + ' ' + u);
+
+        } else if (u === "scissor") {
+
+            if (c === 'rock') {
+                alert('computer wins' + ' ' + 'computer input' + '  ' + c + 'user input' + ' ' + u);
+
+            } else {
+                alert('user wins' + ' ' + 'computer input' + '  ' + c + ' ' + 'user input' + ' ' + u);
+
+            }
+
+        } else if (u === "rock") {
+            //alert('computer wins' + ' ' + 'computer input' + '  ' + c + 'user input' + ' ' + u);
+            if (c === "paper") {
+                alert('user wins' + ' ' + 'computer input' + '  ' + c + 'user input' + ' ' + u);
+
+            } else {
+                alert('computer wins' + ' ' + 'computer input' + '  ' + c + 'user input' + ' ' + u);
+
+            }
+
+
+        } else if (u === "paper") {
+            //alert('computer wins' + ' ' + 'computer input' + '  ' + c + 'user input' + ' ' + u);
+            if (c == 'sicssor') {
+                alert('computer wins' + ' ' + 'computer input' + '  ' + c + 'user input' + ' ' + u);
+
+            } else {
                 alert('user wins' + ' ' + 'computer input' + '  ' + c + 'user input' + ' ' + u);
 
             }
 
-        } else if (u == 'paper' && c == "scissor") {
-            alert('computer wins' + ' ' + 'computer input' + '  ' + c + 'user input' + ' ' + u);
-            if (u == 'scissor' && c == "paper") {
-                alert('user wins' + ' ' + 'computer input' + '  ' + c + 'user input' + ' ' + u);
-
-            }
-
-
-        } else if (u == 'rock' && c == "paper") {
-            alert('computer wins' + ' ' + 'computer input' + '  ' + c + 'user input' + ' ' + u);
-            if (u == 'paper' && c == "rock") {
-                alert('user wins' + ' ' + 'computer input' + '  ' + c + 'user input' + ' ' + u);
-
-            }
 
 
 
+        } //else if (u == 'scissor' && c == "paper") {
+        // alert('computer wins' + ' ' + 'computer input' + '  ' + c + 'user input' + ' ' + u);
+        // if (u == 'paper' && c == "scissor") {
+        //     alert('user wins' + ' ' + 'computer input' + '  ' + c + 'user input' + ' ' + u);
+        // }
 
-        } else if (u == 'scissor' && c == "paper") {
-            alert('computer wins' + ' ' + 'computer input' + '  ' + c + 'user input' + ' ' + u);
-            if (u == 'paper' && c == "scissor") {
-                alert('user wins' + ' ' + 'computer input' + '  ' + c + 'user input' + ' ' + u);
-            }
-        }
     }
 }
