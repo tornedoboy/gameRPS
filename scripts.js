@@ -1,82 +1,51 @@
-const buttons = document.querySelectorAll('.btn');
-const comp = ["rock", "papper", "scissor"];
-const u = user();
-const c = computer();
+function ab() {
+    const comp = ["rock", "papper", "scissor"];
 
+    const buttons = document.querySelectorAll('.btn');
+    let userinput = undefined;
+    buttons.forEach((opt) => {
+        opt.addEventListener('click', () => {
+            userinput = opt.getAttribute('data-choice');
+            console.log(userinput)
 
-
-
-//game();
-//computer();
-//user();
-
-function user() {
-    let userinput;
-    buttons.forEach((button) => {
-        button.addEventListener('click', () => {
-            userinput = button.getAttribute("data")
+            //function run() {
+            // for (i = 1; i < 5; i++) {
+            game();
+            // };
+            //}
         });
     });
 
-    //const button = document.querySelectorAll('.btn');
-    console.log(userinput)
 
-}
-//userinput = prompt("welcome to the game plz input rock or paper or scissor");
-//return userinput
-
-
-
-
-
-function computer(copinput) {
-    copinput = comp[Math.floor(Math.random() * comp.length)];
-    return copinput
-
-
-
-}
-
-function game()
-
-{
-    if (u === c) {
-        alert("draw" + ' ' + 'computer input' + '  ' + c + ' ' + 'user input' + ' ' + u);
-
-    } else if (u === "scissor") {
-
-        if (c === 'rock') {
-            alert('computer wins' + ' ' + 'computer input' + '  ' + c + 'user input' + ' ' + u);
-
-        } else {
-            alert('user wins' + ' ' + 'computer input' + '  ' + c + ' ' + 'user input' + ' ' + u);
-
-        }
-
-    } else if (u === "rock") {
-        //alert('computer wins' + ' ' + 'computer input' + '  ' + c + 'user input' + ' ' + u);
-        if (c === "paper") {
-            alert('user wins' + ' ' + 'computer input' + '  ' + c + 'user input' + ' ' + u);
-
-        } else {
-            alert('computer wins' + ' ' + 'computer input' + '  ' + c + 'user input' + ' ' + u);
-
-        }
-
-
-    } else if (u === "paper") {
-        //alert('computer wins' + ' ' + 'computer input' + '  ' + c + 'user input' + ' ' + u);
-        if (c == 'sicssor') {
-            alert('computer wins' + ' ' + 'computer input' + '  ' + c + 'user input' + ' ' + u);
-
-        } else {
-            alert('user wins' + ' ' + 'computer input' + '  ' + c + 'user input' + ' ' + u);
-
-        }
-
-
-
+    function computer(copinput) {
+        copinput = comp[Math.floor(Math.random() * comp.length)];
+        return copinput
 
     }
 
+    function game()
+
+
+    {
+
+        const c = computer();
+        if (userinput === c) {
+            alert("draw" + ' ' + 'computer input -' + '  ' + c + ' ' + ' user input -' + ' ' + userinput);
+
+        } else if ((userinput === "scissor" && c === "paper") ||
+            (userinput === "rock" && c === "scissor") ||
+            (userinput === "paper" && c === "rock"))
+
+        {
+            alert('player wins' + ' ' + 'computer input -' + '  ' + c + ' user input -' + ' ' + userinput);
+
+
+
+        } else {
+            alert('computer wins' + ' ' + 'computer input -' + '  ' + c + ' user input -' + ' ' + userinput);
+
+        }
+
+
+    }
 }

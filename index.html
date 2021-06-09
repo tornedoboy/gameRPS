@@ -10,28 +10,31 @@
 <h1>This is ROCK PAPER SICSSOR GAME</h1>
 
 <body>
-    <div class="score">
-        <div>
-            <h1>computer score</h1>
-            <p>0</p>
+    <header>
+        <div class="score">
+            <div>
+                <h1>computer score</h1>
+                <p>0</p>
+            </div>
+            <div>
+                <h1>player score</h1>
+                <p>0</p>
+            </div>
+            <div>
+                <h1>moves left</h1>
+                <p>5</p>
+            </div>
         </div>
-        <div>
-            <h1>player score</h1>
-            <p>0</p>
-        </div>
-        <div>
-            <h1>moves left</h1>
-            <p>5</p>
-        </div>
-    </div>
+    </header>
+    <div class="st"><button onclick="ab()" class="start">start</button></div>
+    <main class="btns">
+        <button class='btn' data-choice="rock">ROCK</button>
 
-    <div class="flex">
-        <div> <button class="btn" data="rock">ROCK</button></div>
+        <button class='btn' data-choice="paper">PAPER</button>
 
-        <div><button class="btn" data="paper">PAPER</button></div>
+        <button class='btn' data-choice="scissor">SCISSOR</button>
+    </main>
 
-        <div> <button class="btn" data="sicssor">SICSSOR</button></div>
-    </div>
 </body>
 
 </html>

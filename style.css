@@ -78,7 +78,7 @@ ul {
     margin-top: 30%;
 }
 
-.flex div {
+.flex {
     margin: 10px;
     padding: 20px;
     font-size: 30px;
@@ -88,4 +88,23 @@ p {
     text-align: center;
     color: rgb(233, 14, 14);
     font-size: 25px;
+}
+
+.start {
+    display: flex;
+    margin: 0 20px;
+    padding: 25px;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background: rgb(22, 8, 214);
+    font-size: 33px;
+    color: orange;
+    box-shadow: 0 4px 8px 0 rgba(143, 8, 8, 0.5), 0 6px 20px 0 rgba(126, 8, 8, 0.19);
+}
+
+.st {
+    box-align: center;
+    margin-left: 30%;
 }
