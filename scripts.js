@@ -1,5 +1,5 @@
 function ab() {
-    const comp = ["rock", "papper", "scissor"];
+    const comp = ["rock", "paper", "scissor"];
 
     const buttons = document.querySelectorAll('.btn');
     let userinput = undefined;
