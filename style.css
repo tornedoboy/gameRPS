@@ -10,7 +10,7 @@ h1 {
     text-align: center;
 }
 
-.but :hover {
+.btns :hover {
     background-color: dodgerblue;
 }
 
@@ -90,7 +90,7 @@ p {
     font-size: 25px;
 }
 
-.start {
+.sta {
     display: flex;
     margin: 0 20px;
     padding: 25px;
@@ -105,6 +105,19 @@ p {
 }
 
 .st {
-    box-align: center;
-    margin-left: 30%;
+    margin-left: 40%;
+}
+
+.btns {
+    display: flex;
+    margin: 10px;
+    padding: 20px;
+    font-size: 30px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Times New Roman', Times, serif;
+    color: indigo;
 }
