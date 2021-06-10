@@ -14,25 +14,30 @@
         <div class="score">
             <div>
                 <h1>computer score</h1>
-                <p>0</p>
+                <p id="com">0</p>
             </div>
             <div>
                 <h1>player score</h1>
-                <p>0</p>
+                <p id="ply">0</p>
             </div>
             <div>
                 <h1>moves left</h1>
-                <p>5</p>
+                <p id="mov">5</p>
+            </div>
+            <div>
+                <h2>
+                    <p id="end"></p>
+                </h2>
             </div>
         </div>
     </header>
-    <div class="st"><button onclick="ab()" class="start">start</button></div>
+    <div class="st"><button onclick="ab(); this.style.visibility= 'hidden';" class="sta">start</button></div>
     <main class="btns">
-        <button class='btn' data-choice="rock">ROCK</button>
+        <button class='btn' data-choice="rock" id="hello">ROCK</button>
 
-        <button class='btn' data-choice="paper">PAPER</button>
+        <button class='btn' data-choice="paper" id="bye">PAPER</button>
 
-        <button class='btn' data-choice="scissor">SCISSOR</button>
+        <button class='btn' data-choice="scissor" id="hi">SCISSOR</button>
     </main>
 
 </body>
